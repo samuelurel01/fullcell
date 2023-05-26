@@ -1,0 +1,14 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav-app {
+  width: 250px;
+  padding: 20px;
+}
+
+.button-sidenav {
+  width: 205px;
+  justify-content: flex-start;
+  margin: 1px;
+}

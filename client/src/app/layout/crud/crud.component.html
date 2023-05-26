@@ -1,0 +1,43 @@
+<mat-toolbar style="background-color: white">
+  <div class="crud-toolbar-session-row">
+    <div class="crud-toolbar-session-left">
+      <span>{{editMode ? listTitle : editTitle}}</span>
+    </div>
+
+    <div class="crud-toolbar-session-right">
+      <div class="button-crud">
+        <button mat-raised-button color="primary">
+          <mat-icon>filter_list</mat-icon>
+          Filtrar
+        </button>
+
+      </div>
+
+      <div class="button-crud">
+        <button mat-raised-button>
+          <mat-icon>add_box</mat-icon>
+          Novo
+        </button>
+      </div>
+
+      <div class="button-crud">
+        <button mat-raised-button>
+          <mat-icon>clear_all</mat-icon>
+          Limpar
+        </button>
+      </div>
+
+
+      <div class="button-crud">
+        <button mat-raised-button >
+          <mat-icon>close</mat-icon>
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+</mat-toolbar>
+
+
+<ng-content select="[list-fields]"></ng-content>

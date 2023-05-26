@@ -1,0 +1,11 @@
+<mat-drawer-container class="sidenav-container" autosize>
+  <mat-drawer #drawer class="sidenav-app" mode="side">
+    <div *ngFor="let menu of menuList">
+      <button mat-raised-button class="button-sidenav" (click)="navigate(menu.path)">
+        {{menu?.data?.['titleMenu']||''}}
+      </button>
+    </div>
+  </mat-drawer>
+
+  <ng-content select="[content-body]"></ng-content>
+</mat-drawer-container>
