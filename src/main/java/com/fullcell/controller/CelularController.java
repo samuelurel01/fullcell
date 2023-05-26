@@ -1,7 +1,8 @@
 package com.fullcell.controller;
 
-import com.fullcell.model.Celular;
-import com.fullcell.repository.api.CelularRepository;
+import com.fullcell.model.Produto;
+import com.fullcell.repository.ProdutoRepositoryImpl;
+import com.fullcell.repository.api.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,19 +15,15 @@ public class CelularController {
 
 
     @Autowired
-    private CelularRepository repository;
+    private ProdutoRepository repository;
 
-    @PostMapping(path="/save") // Map ONLY POST Requests
-    public @ResponseBody String save (@RequestParam String modelo, @RequestParam String cor) {
-        Celular n = new Celular();
-        n.setModelo(modelo);
-        n.setCor(cor);
-        repository.save(n);
-        return "Saved";
+    @PostMapping(path="/save")
+    public @ResponseBody Produto save (@RequestBody Produto entity) {
+        return repository.save(entity);
     }
 
-    @GetMapping(path="/all") // Map ONLY POST R
-    public @ResponseBody List<Celular> getAll () {
+    @GetMapping(path="/all")
+    public @ResponseBody List<Produto> getAll () {
         return repository.findAll();
     }
 
