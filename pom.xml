@@ -13,9 +13,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fullcell</name>
 	<description>erp system fullcell</description>
+	<packaging>pom</packaging>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<modules>
+		<module>server</module>
+	</modules>
+
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
