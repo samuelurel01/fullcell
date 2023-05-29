@@ -1,8 +1,15 @@
+<dx-load-panel
+  shadingColor="rgba(0,0,0,0.4)"
+  [visible]="globalLoadPanelVisible"
+  [position]="'content-body'"
+  [showIndicator]="true">
+
+</dx-load-panel>
 <header-nav (menuClick)="sideNav.toogle = $event">
 </header-nav>
 
 <side-nav #sideNav>
-  <div content-body>
+  <div content-body id="content-body">
     <router-outlet></router-outlet>
   </div>
 </side-nav>

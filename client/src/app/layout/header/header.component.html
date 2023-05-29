@@ -1,7 +1,14 @@
-<mat-toolbar>
-  <button mat-mini-fab color="primary" (click)="onMenuClick($event)">
-    <mat-icon>menu</mat-icon>
-  </button>
+<dx-toolbar ngClass="toolbar">
+  <dxi-item location="before" widget="dxButton" [options]="menuOptions">
+  </dxi-item>
 
-  <span style="margin-left: 20px; font-family: monospace; align-items: center">FullCell</span>
-</mat-toolbar>
+
+  <dxi-item location="center" widget="dxButton" locateInMenu="never">
+    <div *dxTemplate>
+      <div style="font-size: 20px"><b>Fullcell</b> Gestão de Lojas e Assistências </div>
+    </div>
+  </dxi-item>
+
+</dx-toolbar>
+
+

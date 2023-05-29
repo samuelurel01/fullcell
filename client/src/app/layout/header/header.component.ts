@@ -2,7 +2,8 @@ import {Component, EventEmitter, Output} from "@angular/core";
 
 @Component({
   selector: 'header-nav',
-  templateUrl: './header.component.html'
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
 
@@ -12,7 +13,8 @@ export class HeaderComponent {
   @Output()
   menuClick: EventEmitter<any> = new EventEmitter<any>()
 
-  onMenuClick(event: MouseEvent) {
-    this.menuClick.emit(event);
-  }
+  menuOptions =  {
+      icon: 'menu',
+      onClick: (event: any) => this.menuClick.emit(event),
+    }
 }

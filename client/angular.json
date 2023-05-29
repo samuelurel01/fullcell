@@ -27,9 +27,12 @@
             "styles": [
               "node_modules/devextreme/dist/css/dx.light.css",
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@fortawesome/fontawesome-free/js/all.min.js"]
           },
           "configurations": {
             "production": {

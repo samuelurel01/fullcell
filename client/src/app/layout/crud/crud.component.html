@@ -1,11 +1,25 @@
 <mat-toolbar style="background-color: white">
   <div class="crud-toolbar-session-row">
     <div class="crud-toolbar-session-left">
-      <span>{{editMode ? listTitle : editTitle}}</span>
+      <span>{{!editMode ? listTitle : editTitle}}</span>
     </div>
 
-    <div class="crud-toolbar-session-right" *ngIf="!editMode">
-      <div class="button-crud">
+    <div class="crud-toolbar-session-right">
+
+      <div class="button-crud" *ngIf="editMode">
+        <dx-button text="Salvar"
+                   icon="add" (onClick)="onButtonSalvarClick()">
+        </dx-button>
+      </div>
+
+      <div class="button-crud" *ngIf="editMode">
+        <dx-button text="Excluir"
+                   icon="trash" (onClick)="onButtonExcluirClick()">
+        </dx-button>
+      </div>
+
+
+      <div class="button-crud" *ngIf="!editMode">
         <dx-button text="Filtrar"
                    icon="find" (onClick)="onButtonFilterClick()">
         </dx-button>
@@ -34,10 +48,19 @@
 
 </mat-toolbar>
 
-<div style="padding-left: 70px; padding-top: 20px">
-  <ng-content select="[list-fields]"></ng-content>
+<div *ngIf="!editMode">
+  <div style="padding-left: 70px; padding-top: 20px">
+    <ng-content select="[list-fields]"></ng-content>
+  </div>
+
+  <div style="padding-top: 10px">
+    <ng-content select="[grid-list]"></ng-content>
+  </div>
 </div>
 
-<div style="padding-top: 10px">
-  <ng-content select="[grid-list]"></ng-content>
+<div *ngIf="!!editMode">
+  <div style="padding-left: 70px; padding-top: 20px">
+    <ng-content select="[edit-template]"></ng-content>
+  </div>
 </div>
+

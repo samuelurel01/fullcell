@@ -15,10 +15,39 @@
 
 
   <div grid-list>
-    <dx-data-grid [dataSource]="dataSource">
-      <dxi-column caption="Código" dataField="codigo"></dxi-column>
+    <dx-data-grid #listGrid
+                  [dataSource]="dataSource"
+                  [elementAttr]="{principal: true}">
+      <dxi-column caption="Código" dataField="codigo" width="70"></dxi-column>
       <dxi-column caption="Marca" dataField="nome"></dxi-column>
+
+      <dxo-summary>
+        <dxi-total-item
+          column="codigo"
+          summaryType="count"
+          showInColumn="nome"
+          displayFormat="{0} Registros">
+        </dxi-total-item>
+      </dxo-summary>
     </dx-data-grid>
+  </div>
+
+  <div edit-template>
+    <dx-form>
+      <dxi-item [label]="{text: 'Código'}" template="codigoTemplate"></dxi-item>
+      <dxi-item [label]="{text: 'Marca'}" template="marcaTemplate"></dxi-item>
+
+
+      <div *dxTemplate="let data of 'codigoTemplate'">
+        <dx-number-box width="250" [(value)]="model['codigo']"></dx-number-box>
+      </div>
+
+
+      <div *dxTemplate="let data of 'marcaTemplate'">
+        <dx-text-box width="250" [(value)]="model['nome']"></dx-text-box>
+      </div>
+
+    </dx-form>
   </div>
 </crud>
 

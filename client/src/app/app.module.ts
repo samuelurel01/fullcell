@@ -20,13 +20,16 @@ import {TextBoxComponent} from "./core/text-box/text.box.component";
 import {
   DevExtremeModule,
   DxButtonModule,
-  DxDataGridModule,
-  DxFormModule,
+  DxDataGridModule, DxDrawerModule,
+  DxFormModule, DxListModule, DxLoadPanelModule, DxNumberBoxModule,
   DxTextAreaModule,
-  DxTextBoxModule
+  DxTextBoxModule, DxToolbarModule, DxTreeListModule, DxTreeViewModule
 } from "devextreme-angular";
 import {HttpClientModule} from "@angular/common/http";
 import {MarcaService} from "./service/marca.service";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {AppStateService} from "./core/app.state.service";
+import {RootInjectorFacade} from "./core/root.injector.facade";
 
 @NgModule({
   declarations: [
@@ -54,10 +57,20 @@ import {MarcaService} from "./service/marca.service";
     DxTextBoxModule,
     DxDataGridModule,
     DxButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    DxDrawerModule,
+    DxListModule,
+    DxTreeListModule,
+    DxTreeViewModule,
+    DxToolbarModule,
+    FontAwesomeModule,
+    DxNumberBoxModule,
+    DxLoadPanelModule
   ],
   providers: [
-    MarcaService
+    MarcaService,
+    AppStateService,
+    RootInjectorFacade
 
   ],
   bootstrap: [AppComponent]

@@ -10,8 +10,9 @@ import {Router, Routes} from "@angular/router";
 })
 export class SideNavComponent implements OnInit{
 
-  menuList: Routes = [];
+  menuList: {}[] = [];
   @ViewChild("drawer") drawer: MatDrawer;
+  isDrawerOpen: boolean = true;
 
   constructor(private router: Router) {
   }
@@ -23,13 +24,13 @@ export class SideNavComponent implements OnInit{
 
   @Input()
   set toogle (event: MouseEvent) {
-    this.drawer.toggle();
+    this.isDrawerOpen = !this.isDrawerOpen;
   }
 
 
-  navigate(url: any) {
-    if(url) {
-      this.router.navigate([url]);
+  navigate(item: any) {
+    if(item && item.itemData && item.itemData.path) {
+      this.router.navigate([item.itemData.path]);
     }
   }
 }

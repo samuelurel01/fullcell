@@ -97,6 +97,21 @@ public abstract class AbstractCrudRepository<T, ID> implements BaseCrudRepositor
         return entity;
     }
 
+    @Override
+    public <T> T update(T entity) {
+        return getEntityManager().merge(entity);
+    }
+
+    @Override
+    public void delete(T entity) {
+        getEntityManager().remove(getEntityManager().contains(entity) ? entity : getEntityManager().merge(entity));
+    }
+
+    @Override
+    public <T> T getById(ID id) {
+        return (T) getEntityManager().find(type, id);
+    }
+
 
     @Override
     public List<T> findAll() {

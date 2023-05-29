@@ -1,11 +1,23 @@
-<mat-drawer-container class="sidenav-container" autosize>
-  <mat-drawer #drawer class="sidenav-app" mode="side">
-    <div *ngFor="let menu of menuList">
-      <button mat-raised-button class="button-sidenav" (click)="navigate(menu.path)">
-        {{menu?.data?.['titleMenu']||''}}
-      </button>
-    </div>
-  </mat-drawer>
+<dx-drawer  [openedStateMode]="'shrink'"
+            [position]="'left'"
+            [revealMode]="'slide'"
+            template="template"
+            [(opened)]="isDrawerOpen"
+            [height]="'100%'"
+            [closeOnOutsideClick]="true">
 
-  <ng-content select="[content-body]"></ng-content>
-</mat-drawer-container>
+  <div *dxTemplate="let data of 'template'" style="width: 250px; background-color: #dedede; height: 100%; padding: 10px; border-right: 1px solid #AFAFAF; border-radius: 2px">
+    <dx-tree-view
+      #treeview
+      [items]="menuList"
+      [width]="500"
+      [height]="'100%'"
+      (onItemClick)="navigate($event)"
+      searchMode="contains"
+    ></dx-tree-view>
+  </div>
+
+  <div id="content" class="dx-theme-background-color">
+    <ng-content select="[content-body]"></ng-content>
+  </div>
+</dx-drawer>

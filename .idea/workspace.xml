@@ -5,10 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91a9402a-4a71-4e29-9ba8-d6557957f214" name="Changes" comment="first connection with server">
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/app.state.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/decorators/global.loading.indicator.decorator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/observable.utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/proxy.observable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/root.injector.facade.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/model/menu.scope.enum.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/core/base.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/core/base.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/layout/crud/abstract.crud.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/crud/abstract.crud.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/MarcaRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/MarcaRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/side-nav/side.nav.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/side-nav/side.nav.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/side-nav/side.nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/side-nav/side.nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/side-nav/side.nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/side-nav/side.nav.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/service/abstract.crud.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/service/abstract.crud.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/MarcaControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/MarcaControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/AbstractCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/AbstractCrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/BaseCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/BaseCrudRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/home/samuel/dev/git/fullcell/client/src/app/model",
+    "last_opened_file_path": "/home/samuel/dev/git/fullcell/client/src/app/core",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +107,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/app/core" />
+      <recent name="$PROJECT_DIR$/client/src/app/core/decorators" />
       <recent name="$PROJECT_DIR$/client/src/app/model" />
       <recent name="$PROJECT_DIR$/client/src" />
       <recent name="$PROJECT_DIR$" />
@@ -111,7 +144,7 @@
       <workItem from="1685121811911" duration="490000" />
       <workItem from="1685122315692" duration="143000" />
       <workItem from="1685122465457" duration="818000" />
-      <workItem from="1685123296873" duration="27312000" />
+      <workItem from="1685123296873" duration="55833000" />
     </task>
     <task id="LOCAL-00001" summary="alter server port">
       <created>1685118069887</created>
@@ -176,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685332330510</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="first connection with server">
+      <created>1685332909585</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685332909585</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,11 +247,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/MarcaRepositoryImpl.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/MarcaControler.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
