@@ -33,7 +33,7 @@ export class CrudComponent<T, F> {
   }
 
   onButtonClearClick() {
-
+    this.parent.execClear();
   }
 
   onButtonCloseClick() {

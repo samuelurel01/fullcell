@@ -25,6 +25,10 @@ export abstract class AbstractCrud<T, F> extends BaseComponent {
     return this.doFilter();
   }
 
+  execClear() {
+    this.filter = {} as F;
+  }
+
   canFilter(): boolean {
     return true;
   }

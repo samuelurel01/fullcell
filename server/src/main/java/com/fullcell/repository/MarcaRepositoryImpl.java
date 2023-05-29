@@ -16,8 +16,8 @@ public class MarcaRepositoryImpl extends AbstractCrudRepository<Marca, Integer> 
     @Override
     public List<Marca> list(MarcaFilterVO filterVO) {
         if(filterVO != null && filterVO.getNome() != null) {
-            return getSession().createQuery("select o from Marca o where o.nome = :nome", Marca.class)
-                    .setParameter("nome", filterVO.getNome())
+            return getSession().createQuery("select o from Marca o where upper(o.nome) like :nomeLike", Marca.class)
+                    .setParameter("nomeLike", "%" +filterVO.getNome().toUpperCase()+"%")
                     .list();
         }
 
