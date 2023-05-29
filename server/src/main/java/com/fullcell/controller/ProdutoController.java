@@ -1,7 +1,6 @@
 package com.fullcell.controller;
 
 import com.fullcell.model.Produto;
-import com.fullcell.repository.ProdutoRepositoryImpl;
 import com.fullcell.repository.api.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping(path = "/celular")
-public class CelularController {
+@RequestMapping(path = "/produto")
+public class ProdutoController {
 
 
     @Autowired

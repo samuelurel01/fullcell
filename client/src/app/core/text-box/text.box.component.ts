@@ -8,7 +8,7 @@ import {Component, Input} from "@angular/core";
       <div style="margin-left: 45px">
         <mat-form-field appearance="outline">
           <mat-label>{{placeHolder}}</mat-label>
-          <input matInput placeholder="Placeholder">
+          <input matInput [placeholder]="placeHolder">
         </mat-form-field>
       </div>
     </div>

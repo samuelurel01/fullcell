@@ -17,6 +17,16 @@ import {MarcaCrudComponent} from "./cadastros/marca-crud/marca.crud.component";
 import {CrudComponent} from "./layout/crud/crud.component";
 import {MatInputModule} from "@angular/material/input";
 import {TextBoxComponent} from "./core/text-box/text.box.component";
+import {
+  DevExtremeModule,
+  DxButtonModule,
+  DxDataGridModule,
+  DxFormModule,
+  DxTextAreaModule,
+  DxTextBoxModule
+} from "devextreme-angular";
+import {HttpClientModule} from "@angular/common/http";
+import {MarcaService} from "./service/marca.service";
 
 @NgModule({
   declarations: [
@@ -38,9 +48,18 @@ import {TextBoxComponent} from "./core/text-box/text.box.component";
     MatButtonModule,
     CommonModule,
     MatSidenavModule,
-    MatInputModule
+    MatInputModule,
+    DxFormModule,
+    DxTextAreaModule,
+    DxTextBoxModule,
+    DxDataGridModule,
+    DxButtonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    MarcaService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

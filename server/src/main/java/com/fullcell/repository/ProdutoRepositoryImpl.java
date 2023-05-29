@@ -7,7 +7,7 @@ import jakarta.transaction.Transactional;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
-@Repository("com.fullcell.repository.CelularRepositoryImpl")
+@Repository()
 @Transactional(Transactional.TxType.REQUIRED)
 public class ProdutoRepositoryImpl extends AbstractCrudRepository<Produto, Integer> implements ProdutoRepository {
 

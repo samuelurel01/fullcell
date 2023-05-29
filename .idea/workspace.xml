@@ -4,26 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a9402a-4a71-4e29-9ba8-d6557957f214" name="Changes" comment="reestruturando projeto">
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/server/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/FullcellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/FullcellApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/controller/CelularController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/CelularController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/model/cadastro/Marca.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/cadastro/Marca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/model/core/AbstractCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/AbstractCrudRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/model/core/ArquivoDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/ArquivoDigital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/model/core/BaseCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/core/BaseCrudRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/repository/ProdutoRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/ProdutoRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fullcell/repository/api/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/api/ProdutoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence-model.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/META-INF/persistence-model.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="91a9402a-4a71-4e29-9ba8-d6557957f214" name="Changes" comment="iniciado implementação do client">
+      <change afterPath="$PROJECT_DIR$/client/proxy.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/core/base.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/layout/crud/abstract.crud.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/model/marca.filter.vo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/model/marca.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/service/abstract.crud.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/service/marca.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/MarcaControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/model/vo/MarcaFilterVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/MarcaRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/api/MarcaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/cadastros/marca-crud/marca.crud.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/core/text-box/text.box.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/core/text-box/text.box.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/layout/crud/crud.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/CelularController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/ProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/ProdutoRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/fullcell/repository/ProdutoRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,41 +67,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/samuel/dev/git/fullcell&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9c8755f89e32d435c988ee1ae7820d9a&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/home/samuel/dev/git/fullcell/client/src/app/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "9c8755f89e32d435c988ee1ae7820d9a",
+    "ts.external.directory.path": "/home/samuel/dev/git/fullcell/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/app/model" />
+      <recent name="$PROJECT_DIR$/client/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/server" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fullcell.repository" />
+      <recent name="com.fullcell.repository.api" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,7 +134,7 @@
       <workItem from="1685121811911" duration="490000" />
       <workItem from="1685122315692" duration="143000" />
       <workItem from="1685122465457" duration="818000" />
-      <workItem from="1685123296873" duration="335000" />
+      <workItem from="1685123296873" duration="26624000" />
     </task>
     <task id="LOCAL-00001" summary="alter server port">
       <created>1685118069887</created>
@@ -155,11 +171,43 @@
       <option name="project" value="LOCAL" />
       <updated>1685123631037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="iniciado implementação do client">
+      <created>1685137261735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685137261735</updated>
+    </task>
+    <task id="LOCAL-00007" summary="iniciado implementação do client">
+      <created>1685137303327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685137303327</updated>
+    </task>
+    <task id="LOCAL-00008" summary="iniciado implementação do client">
+      <created>1685137682891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685137682891</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alter server port" />
@@ -167,6 +215,18 @@
     <MESSAGE value="implementação do escopo de repositório" />
     <MESSAGE value="readme" />
     <MESSAGE value="reestruturando projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="reestruturando projeto" />
+    <MESSAGE value="iniciado implementação do client" />
+    <option name="LAST_COMMIT_MESSAGE" value="iniciado implementação do client" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/com/fullcell/controller/MarcaControler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

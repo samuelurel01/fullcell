@@ -1,8 +1,24 @@
-<crud [editTitle]="'Cadastro de Marcas'" [listTitle]="'Listagem de Marcas'">
-
+<crud [editTitle]="'Cadastro de Marcas'"
+      [listTitle]="'Listagem de Marcas'">
 
   <div list-fields>
-    <text-box [placeHolder]="'Marca'"></text-box>
+    <dx-form>
+      <dxi-item [label]="{text: 'Marca'}" template="marcaTemplate"></dxi-item>
+
+
+      <div *dxTemplate="let data of 'marcaTemplate'">
+        <dx-text-box width="250" [(value)]="filter['nome']"></dx-text-box>
+      </div>
+
+    </dx-form>
+  </div>
+
+
+  <div grid-list>
+    <dx-data-grid [dataSource]="dataSource">
+      <dxi-column caption="Código" dataField="codigo"></dxi-column>
+      <dxi-column caption="Marca" dataField="nome"></dxi-column>
+    </dx-data-grid>
   </div>
 </crud>
 
