@@ -7,6 +7,18 @@ import {Component, EventEmitter, Output} from "@angular/core";
 })
 export class HeaderComponent {
 
+  menuUserOptions: any[] = [{
+    id: '1',
+    name: 'Samuel Urel',
+    items: [{
+      id: '1_1',
+      name: 'Perfil'
+    }, {
+      id: '1_2',
+      name: 'Sair'
+    }]
+  }];
+
   constructor() {
   }
 
@@ -17,4 +29,8 @@ export class HeaderComponent {
       icon: 'menu',
       onClick: (event: any) => this.menuClick.emit(event),
     }
+
+  menuUserClick(event: any) {
+    console.log(event);
+  }
 }

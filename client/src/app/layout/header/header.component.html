@@ -4,9 +4,26 @@
 
 
   <dxi-item location="center" widget="dxButton" locateInMenu="never">
-    <div *dxTemplate>
+    <div>
       <div style="font-size: 20px"><b>Fullcell</b> Gestão de Lojas e Assistências </div>
     </div>
+  </dxi-item>
+
+
+  <dxi-item location="after" >
+    <div class="avatar">
+      <img src="favicon.ico">
+
+      <dx-menu [dataSource]="menuUserOptions"
+               displayExpr="name"
+               (onItemClick)="menuUserClick($event)">
+      </dx-menu>
+    </div>
+  </dxi-item>
+
+
+  <dxi-item location="after">
+
   </dxi-item>
 
 </dx-toolbar>

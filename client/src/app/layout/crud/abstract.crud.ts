@@ -125,21 +125,29 @@ export abstract class AbstractCrud<T, F> extends BaseComponent {
     // this.showMessage = showSuccessMessage;
 
     return this.of(this.callSaveService(this.model), (sucess: T) => {
+
       this.model = sucess;
-      notify("Registro salvo com sucesso!", 'success', 5000);
+      notify("Registro salvo com sucesso!", 'success', 5000)
+      this.doClose(true);
+
     }, (error: any) => notify("Erro ao salvar o registro!", 'erro', 5000));
   }
 
 
+  @GlobalLoadingIndicator
   doRemove(editMode: boolean) {
     return this.of(this.callRemoveService(this.model), (sucess: T) => {
+
       this.model = sucess;
       notify("Registro Excluido com sucesso!", 'success', 5000);
       this.doClose(true);
+
     }, (error: any) => {
-      console.log("deu erro uai!")
+
       notify("Erro ao excluir o registro!", 'error', 5000);
+
     });
+
   }
 
   callSaveService(model: T) {

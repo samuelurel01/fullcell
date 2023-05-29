@@ -8,6 +8,24 @@ const routes: Routes = [
   {path: "marca/create", component: MarcaCrudComponent},
   {path: "marca/edit/:id", component: MarcaCrudComponent},
 
+  {path: "produto", component: MarcaCrudComponent, data: {scope: MenuScopeEnum.CADASTRO, menu: 'Produto'}},
+  {path: "produto/create", component: MarcaCrudComponent},
+  {path: "produto/edit/:id", component: MarcaCrudComponent},
+
+  {path: "cliente", component: MarcaCrudComponent, data: {scope: MenuScopeEnum.CADASTRO, menu: 'Clientes'}},
+  {path: "cliente/create", component: MarcaCrudComponent},
+  {path: "cliente/edit/:id", component: MarcaCrudComponent},
+
+
+  {path: "estoque-entrada", component: MarcaCrudComponent, data: {scope: MenuScopeEnum.ESTOQUE, menu: 'Entradas'}},
+  {path: "estoque-entrada/create", component: MarcaCrudComponent},
+  {path: "estoque-entrada/edit/:id", component: MarcaCrudComponent},
+
+  {path: "orcamento", component: MarcaCrudComponent, data: {scope: MenuScopeEnum.ORCAMENTO, menu: 'Entradas'}},
+  {path: "orcamento/create", component: MarcaCrudComponent},
+  {path: "orcamento/edit/:id", component: MarcaCrudComponent},
+
+
 ];
 
 @NgModule({

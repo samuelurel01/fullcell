@@ -6,3 +6,21 @@
   padding-left: 10px;
   color: white;
 }
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+}
+
+.info {
+  width: auto;
+  text-align: left;
+  height: 100%;
+  font-size: 11pt;
+  font-weight: normal;
+  padding: 25px 20px;
+  display: contents;
+}
+

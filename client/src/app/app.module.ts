@@ -20,8 +20,8 @@ import {TextBoxComponent} from "./core/text-box/text.box.component";
 import {
   DevExtremeModule,
   DxButtonModule,
-  DxDataGridModule, DxDrawerModule,
-  DxFormModule, DxListModule, DxLoadPanelModule, DxNumberBoxModule,
+  DxDataGridModule, DxDrawerModule, DxFileManagerModule,
+  DxFormModule, DxListModule, DxLoadPanelModule, DxMenuModule, DxNumberBoxModule,
   DxTextAreaModule,
   DxTextBoxModule, DxToolbarModule, DxTreeListModule, DxTreeViewModule
 } from "devextreme-angular";
@@ -65,7 +65,9 @@ import {RootInjectorFacade} from "./core/root.injector.facade";
     DxToolbarModule,
     FontAwesomeModule,
     DxNumberBoxModule,
-    DxLoadPanelModule
+    DxLoadPanelModule,
+    DxFileManagerModule,
+    DxMenuModule
   ],
   providers: [
     MarcaService,
