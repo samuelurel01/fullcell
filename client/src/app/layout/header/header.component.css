@@ -1,8 +1,8 @@
 .toolbar{
   display: flex;
   align-items: center;
-  background-color: #5e87b0;
-  height: 60px;
+  background-color: #4e4e4e;
+  height: 45px;
   padding-left: 10px;
   color: white;
 }
@@ -14,6 +14,13 @@
   font-size: 12px;
 }
 
+.title-name {
+  font-size: 20px;
+  font-family: Garamond;
+  opacity: 0.8;
+  text-shadow: -4px 4px 4px black;
+}
+
 .info {
   width: auto;
   text-align: left;
@@ -22,5 +29,13 @@
   font-weight: normal;
   padding: 25px 20px;
   display: contents;
+}
+
+.button-header {
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 

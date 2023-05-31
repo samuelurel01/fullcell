@@ -1,20 +1,28 @@
 <dx-drawer  [openedStateMode]="'shrink'"
             [position]="'left'"
             [revealMode]="'slide'"
+            [minSize]="50"
             template="template"
             [(opened)]="isDrawerOpen"
             [height]="'100%'"
             [closeOnOutsideClick]="true">
 
-  <div *dxTemplate="let data of 'template'" style="width: 250px; background-color: #dedede; height: 100%; padding: 10px; border-right: 1px solid #AFAFAF; border-radius: 2px">
-    <dx-tree-view
-      #treeview
+  <div *dxTemplate="let data of 'template'" style="background-color: #313a46; height: 100%; padding: 10px; border-right: 1px solid #AFAFAF; border-radius: 2px">
+    <dx-menu
       [items]="menuList"
-      [width]="500"
-      [height]="'100%'"
+      [orientation]="'vertical'"
       (onItemClick)="navigate($event)"
-      searchMode="contains"
-    ></dx-tree-view>
+      [selectByClick]="true"
+      [itemTemplate]="'itemTemplate'">
+
+      <div *dxTemplate="let item of 'itemTemplate'">
+        <div class="side-nav">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <div style="padding-left: 5px">{{item.text}}</div>
+        </div>
+      </div>
+
+    </dx-menu>
   </div>
 
   <div id="content" class="dx-theme-background-color">

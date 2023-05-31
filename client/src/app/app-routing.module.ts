@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: "produto/create", component: MarcaCrudComponent},
   {path: "produto/edit/:id", component: MarcaCrudComponent},
 
-  {path: "cliente", component: MarcaCrudComponent, data: {scope: MenuScopeEnum.CADASTRO, menu: 'Clientes'}},
+  {path: "cliente", component: MarcaCrudComponent, data: {scope: MenuScopeEnum.CADASTRO, menu: 'Clientes', icon: ''}},
   {path: "cliente/create", component: MarcaCrudComponent},
   {path: "cliente/edit/:id", component: MarcaCrudComponent},
 

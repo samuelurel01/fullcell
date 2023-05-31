@@ -11,7 +11,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {SideNavComponent} from "./layout/side-nav/side.nav.component";
 import {HomeComponent} from "./layout/home/home.component";
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MarcaCrudComponent} from "./cadastros/marca-crud/marca.crud.component";
 import {CrudComponent} from "./layout/crud/crud.component";
@@ -41,34 +41,35 @@ import {RootInjectorFacade} from "./core/root.injector.facade";
     CrudComponent,
     TextBoxComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    CommonModule,
-    MatSidenavModule,
-    MatInputModule,
-    DxFormModule,
-    DxTextAreaModule,
-    DxTextBoxModule,
-    DxDataGridModule,
-    DxButtonModule,
-    HttpClientModule,
-    DxDrawerModule,
-    DxListModule,
-    DxTreeListModule,
-    DxTreeViewModule,
-    DxToolbarModule,
-    FontAwesomeModule,
-    DxNumberBoxModule,
-    DxLoadPanelModule,
-    DxFileManagerModule,
-    DxMenuModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatSlideToggleModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        CommonModule,
+        MatSidenavModule,
+        MatInputModule,
+        DxFormModule,
+        DxTextAreaModule,
+        DxTextBoxModule,
+        DxDataGridModule,
+        DxButtonModule,
+        HttpClientModule,
+        DxDrawerModule,
+        DxListModule,
+        DxTreeListModule,
+        DxTreeViewModule,
+        DxToolbarModule,
+        FontAwesomeModule,
+        DxNumberBoxModule,
+        DxLoadPanelModule,
+        DxFileManagerModule,
+        DxMenuModule,
+        NgOptimizedImage
+    ],
   providers: [
     MarcaService,
     AppStateService,

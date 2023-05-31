@@ -12,7 +12,7 @@ export class SideNavComponent implements OnInit{
 
   menuList: {}[] = [];
   @ViewChild("drawer") drawer: MatDrawer;
-  isDrawerOpen: boolean = true;
+  isDrawerOpen: boolean = false;
 
   constructor(private router: Router) {
   }
@@ -30,6 +30,7 @@ export class SideNavComponent implements OnInit{
 
   navigate(item: any) {
     if(item && item.itemData && item.itemData.path) {
+      this.toogle = null;
       this.router.navigate([item.itemData.path]);
     }
   }

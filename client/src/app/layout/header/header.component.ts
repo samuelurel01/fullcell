@@ -7,6 +7,9 @@ import {Component, EventEmitter, Output} from "@angular/core";
 })
 export class HeaderComponent {
 
+  buttonType = 'success';
+
+
   menuUserOptions: any[] = [{
     id: '1',
     name: 'Samuel Urel',
@@ -26,9 +29,10 @@ export class HeaderComponent {
   menuClick: EventEmitter<any> = new EventEmitter<any>()
 
   menuOptions =  {
-      icon: 'menu',
-      onClick: (event: any) => this.menuClick.emit(event),
-    }
+    icon: 'menu',
+    type: this.buttonType,
+    onClick: (event: any) => this.menuClick.emit(event),
+  }
 
   menuUserClick(event: any) {
     console.log(event);

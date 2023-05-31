@@ -1,31 +1,48 @@
 <dx-toolbar ngClass="toolbar">
-  <dxi-item location="before" widget="dxButton" [options]="menuOptions">
+  <dxi-item location="before" widget="dxButton" [options]="menuOptions" ngClass="button-header">
   </dxi-item>
 
+  <dxi-item location="before">
+    <img src="assets/logo_vetor.png" width="160" height="35">
+  </dxi-item>
 
-  <dxi-item location="center" widget="dxButton" locateInMenu="never">
-    <div>
-      <div style="font-size: 20px"><b>Fullcell</b> Gestão de Lojas e Assistências </div>
-    </div>
+  <dxi-item location="after">
+    <dx-text-box width="200"
+                 placeholder="busca...">
+    </dx-text-box>
+  </dxi-item>
+
+  <dxi-item location="after">
+    <dx-button icon="home"
+               [type]="buttonType">
+    </dx-button>
+  </dxi-item>
+
+  <dxi-item location="after">
+    <dx-button icon="overflow"
+               [type]="buttonType">
+    </dx-button>
+  </dxi-item>
+
+  <dxi-item location="after">
+    <dx-button icon="bell"
+               [type]="buttonType">
+    </dx-button>
+  </dxi-item>
+
+  <dxi-item location="after">
+    <dx-button icon="find"
+               [type]="buttonType">
+    </dx-button>
   </dxi-item>
 
 
   <dxi-item location="after" >
-    <div class="avatar">
-      <img src="favicon.ico">
-
-      <dx-menu [dataSource]="menuUserOptions"
-               displayExpr="name"
-               (onItemClick)="menuUserClick($event)">
-      </dx-menu>
-    </div>
+    <dx-button icon="card"
+               text="Samuel Urel"
+               [type]="buttonType">
+    </dx-button>
   </dxi-item>
-
-
-  <dxi-item location="after">
-
-  </dxi-item>
-
 </dx-toolbar>
 
 
