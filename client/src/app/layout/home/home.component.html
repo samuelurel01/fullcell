@@ -10,6 +10,10 @@
 
 <side-nav #sideNav>
   <div content-body id="content-body">
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="activateDashboard()" (deactivate)="activateDashboard()"></router-outlet>
+
+    <div *ngIf="dashboardVisible">
+      <dashboard></dashboard>
+    </div>
   </div>
 </side-nav>

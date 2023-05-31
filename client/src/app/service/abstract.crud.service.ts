@@ -30,8 +30,8 @@ export abstract class AbstractCrudService<T, F> {
     });
   }
 
-  list(filter: F): Observable<T> {
-    return this._httpClient.post<T>("/api" + this._urlPrefix + "/list", filter, {
+  list(filter: F): Observable<T[]> {
+    return this._httpClient.post<T[]>("/api" + this._urlPrefix + "/list", filter, {
       headers: {'Content-Type': 'application/json'}
     });
   }

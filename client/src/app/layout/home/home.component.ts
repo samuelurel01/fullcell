@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Subscription} from "rxjs";
 import {AppStateService} from "../../core/app.state.service";
+import {Router, RouterState} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ import {AppStateService} from "../../core/app.state.service";
 })
 export class HomeComponent implements OnInit{
 
+
+  dashboardVisible: boolean = true;
 
   ngOnInit(): void {
     this.globalLoadPanelVisibleSubscription = this.appStateService.globalLoadPanelVisible.subscribe((visible: boolean) => {
@@ -19,6 +22,11 @@ export class HomeComponent implements OnInit{
   globalLoadPanelVisible = false;
   private globalLoadPanelVisibleSubscription: Subscription;
 
-  constructor(private appStateService: AppStateService) {
+  constructor(private appStateService: AppStateService, private router: Router) {
+    console.log("passou pela home");
+  }
+
+  activateDashboard() {
+      this.dashboardVisible = this.router.url == "/"
   }
 }

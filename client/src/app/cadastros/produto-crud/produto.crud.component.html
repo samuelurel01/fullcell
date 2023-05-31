@@ -1,0 +1,37 @@
+<crud listTitle="Listagem de Produtos">
+
+  <div list-fields>
+    <dx-form>
+      <dxi-item [label]="{text: 'Marca'}" template="marcaTemplate"></dxi-item>
+      <dxi-item [label]="{text: 'Produto'}" template="produtoTemplate"></dxi-item>
+
+      <div *dxTemplate="let data of 'marcaTemplate'">
+        <dx-text-box width="250" [(value)]="filter['nome']"></dx-text-box>
+      </div>
+
+      <div *dxTemplate="let data of 'produtoTemplate'">
+        <dx-text-box width="250" [(value)]="filter['nome']"></dx-text-box>
+      </div>
+
+    </dx-form>
+  </div>
+
+
+  <div grid-list>
+    <dx-data-grid #listGrid
+                  [dataSource]="dataSource"
+                  [elementAttr]="{principal: true}">
+      <dxi-column caption="Código" dataField="codigo" width="70"></dxi-column>
+      <dxi-column caption="Marca" dataField="nome"></dxi-column>
+
+      <dxo-summary>
+        <dxi-total-item
+          column="codigo"
+          summaryType="count"
+          showInColumn="nome"
+          displayFormat="{0} Registros">
+        </dxi-total-item>
+      </dxo-summary>
+    </dx-data-grid>
+  </div>
+</crud>

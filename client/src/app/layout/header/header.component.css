@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background-color: #4e4e4e;
-  height: 45px;
+  height: 50px;
   padding-left: 10px;
   color: white;
 }
@@ -37,5 +37,9 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
+}
+
+.padding-rigth{
+  padding-right: 5px;
 }
 

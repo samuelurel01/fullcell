@@ -1,13 +1,14 @@
 <dx-drawer  [openedStateMode]="'shrink'"
             [position]="'left'"
-            [revealMode]="'slide'"
-            [minSize]="50"
+            [revealMode]="'expand'"
+            [minSize]="56"
+            [shading]="true"
             template="template"
             [(opened)]="isDrawerOpen"
             [height]="'100%'"
             [closeOnOutsideClick]="true">
 
-  <div *dxTemplate="let data of 'template'" style="background-color: #313a46; height: 100%; padding: 10px; border-right: 1px solid #AFAFAF; border-radius: 2px">
+  <div *dxTemplate="let data of 'template'" style="background-color: #313a46; height: 100%; padding-top: 10px; border-right: 1px solid #AFAFAF; border-radius: 2px">
     <dx-menu
       [items]="menuList"
       [orientation]="'vertical'"
@@ -17,7 +18,11 @@
 
       <div *dxTemplate="let item of 'itemTemplate'">
         <div class="side-nav">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <i [class]="item.icon" aria-hidden="true" *ngIf="!!item.icon"></i>
+          <div style="display: flex; margin-right: 16px;">
+            <i [class]="getIconByScope(item.text)" aria-hidden="true"*ngIf="!item.icon"></i>
+          </div>
+
           <div style="padding-left: 5px">{{item.text}}</div>
         </div>
       </div>

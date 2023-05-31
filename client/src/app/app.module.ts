@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -19,9 +19,9 @@ import {MatInputModule} from "@angular/material/input";
 import {TextBoxComponent} from "./core/text-box/text.box.component";
 import {
   DevExtremeModule,
-  DxButtonModule,
+  DxButtonModule, DxCalendarModule,
   DxDataGridModule, DxDrawerModule, DxFileManagerModule,
-  DxFormModule, DxListModule, DxLoadPanelModule, DxMenuModule, DxNumberBoxModule,
+  DxFormModule, DxListModule, DxLoadPanelModule, DxMenuModule, DxNumberBoxModule, DxPieChartModule,
   DxTextAreaModule,
   DxTextBoxModule, DxToolbarModule, DxTreeListModule, DxTreeViewModule
 } from "devextreme-angular";
@@ -30,6 +30,13 @@ import {MarcaService} from "./service/marca.service";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {AppStateService} from "./core/app.state.service";
 import {RootInjectorFacade} from "./core/root.injector.facade";
+import {DashboardComponent} from "./layout/dashboard/dashboard.component";
+import {loadMessages, locale} from 'devextreme/localization';
+import {ProdutoCrudComponent} from "./cadastros/produto-crud/produto.crud.component";
+
+let messagespt = require("devextreme/localization/messages/pt.json");
+loadMessages(messagespt);
+locale('pt');
 
 @NgModule({
   declarations: [
@@ -39,38 +46,43 @@ import {RootInjectorFacade} from "./core/root.injector.facade";
     HomeComponent,
     MarcaCrudComponent,
     CrudComponent,
-    TextBoxComponent
+    TextBoxComponent,
+    DashboardComponent,
+    ProdutoCrudComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatSlideToggleModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatButtonModule,
-        CommonModule,
-        MatSidenavModule,
-        MatInputModule,
-        DxFormModule,
-        DxTextAreaModule,
-        DxTextBoxModule,
-        DxDataGridModule,
-        DxButtonModule,
-        HttpClientModule,
-        DxDrawerModule,
-        DxListModule,
-        DxTreeListModule,
-        DxTreeViewModule,
-        DxToolbarModule,
-        FontAwesomeModule,
-        DxNumberBoxModule,
-        DxLoadPanelModule,
-        DxFileManagerModule,
-        DxMenuModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    CommonModule,
+    MatSidenavModule,
+    MatInputModule,
+    DxFormModule,
+    DxTextAreaModule,
+    DxTextBoxModule,
+    DxDataGridModule,
+    DxButtonModule,
+    HttpClientModule,
+    DxDrawerModule,
+    DxListModule,
+    DxTreeListModule,
+    DxTreeViewModule,
+    DxToolbarModule,
+    FontAwesomeModule,
+    DxNumberBoxModule,
+    DxLoadPanelModule,
+    DxFileManagerModule,
+    DxMenuModule,
+    NgOptimizedImage,
+    DxCalendarModule,
+    DxPieChartModule
+  ],
   providers: [
+    {provide: LOCALE_ID, useValue: 'pt-BR'},
     MarcaService,
     AppStateService,
     RootInjectorFacade
