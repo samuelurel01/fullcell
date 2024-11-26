@@ -92,13 +92,13 @@ public abstract class AbstractCrudRepository<T, ID> implements BaseCrudRepositor
 
 
     @Override
-    public <T> T save(T entity) {
+    public T save(T entity) {
         getEntityManager().persist(entity);
         return entity;
     }
 
     @Override
-    public <T> T update(T entity) {
+    public T update(T entity) {
         return getEntityManager().merge(entity);
     }
 
@@ -108,7 +108,7 @@ public abstract class AbstractCrudRepository<T, ID> implements BaseCrudRepositor
     }
 
     @Override
-    public <T> T getById(ID id) {
+    public T getById(ID id) {
         return (T) getEntityManager().find(type, id);
     }
 

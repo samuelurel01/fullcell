@@ -5,13 +5,13 @@ import java.util.List;
 
 public interface BaseCrudRepository<T, ID> {
 
-    <T> T save(T entity);
+    T save(T entity);
 
-    <T2> T2 update(T2 entity);
+    T update(T entity);
 
     void delete (T entity);
 
-    <T2> T2 getById(ID id);
+    T getById(ID id);
 
     List<T> findAll();
 }
