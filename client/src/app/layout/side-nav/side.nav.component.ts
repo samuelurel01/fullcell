@@ -1,7 +1,7 @@
-import {AfterViewInit, Component, Input, OnInit, ViewChild} from "@angular/core";
+import {Component, Input, OnInit, ViewChild} from "@angular/core";
 import {MatDrawer} from "@angular/material/sidenav";
-import {AppRoutingModule, getMenuByRoutes} from "../../app-routing.module";
-import {Router, Routes} from "@angular/router";
+import {getMenuByRoutes} from "../../app-routing.module";
+import {Router} from "@angular/router";
 import {MenuScopeEnum} from "../../model/menu.scope.enum";
 
 @Component({
